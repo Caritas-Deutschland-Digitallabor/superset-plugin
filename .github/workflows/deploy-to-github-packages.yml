@@ -3,7 +3,7 @@ name: Deploy to GitHub Packages
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deploy:
@@ -29,3 +29,5 @@ jobs:
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: npm publish
+
+
